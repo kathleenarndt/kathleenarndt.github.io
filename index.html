@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg Cat Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #0a0a0f;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(180deg, #0d1b2a 0%, #0a0a0f 100%);
+            border-bottom: 1px solid #1a3a5c;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #4fc3f7;
+            text-shadow: 0 0 20px rgba(79, 195, 247, 0.3);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: #78909c;
+            font-size: 1.1rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #1a3a5c;
+            background: #0d1b2a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 32px rgba(79, 195, 247, 0.15);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #546e7a;
+            border-top: 1px solid #1a3a5c;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyborg Cat Gallery</h1>
+        <p>A cyberpunk apocalypse, one cat at a time.</p>
+    </header>
+
+    <main class="gallery">
+        <div class="gallery-item">
+            <img src="Images/cyborg_cat_cyberpunk_04.png" alt="Cyborg cat in a cyberpunk street">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/cyborg_cat_cyberpunk_09.png" alt="Cyborg cat in a cyberpunk street">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/cyborg_cat_cyberpunk_11.png" alt="Cyborg cat in a cyberpunk street">
+        </div>
+        <div class="gallery-item">
+            <img src="Images/cyborg_cat_cyberpunk_13.png" alt="Cyborg cat in a cyberpunk street">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cyborg Cat Gallery</p>
+    </footer>
+</body>
+</html>
